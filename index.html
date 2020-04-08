@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  <title>Adding Courses</title>
+
+</head>
+<body>
+                           <!-- START NAV -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light mb-4" id="navbar">
+  <div class="container">
+  <p class="navbar-brand" id="logo">Courses</p>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+    <a href="#" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+    <a href="#" class="nav-link">About</a>
+    </li>
+    <li class="nav-item" id="submenu">
+    <i id="cart" class="fa fa-shopping-cart"></i>
+    <div id="shopping-cart">
+      <table id="cart-content">
+       <thead>
+          <tr>
+              <th id="content">Image</th>
+              <th id="content">Name</th>
+              <th id="content">Price</th>
+              <th></th>
+          </tr>
+        </thead>
+     
+    <tbody></tbody>
+</table>
+        <hr>
+  <a href="#" id="button1" class="btn btn-block "type="submit">Clear Cart</a>
+      </div>
+      </li>
+    <li class="nav-item">
+    <a href="#" class="nav-link">Contact</a>
+    </li>
+    </ul>
+    </div>
+</nav>
+                      <!-- END OF NAV -->
+ 
+                    <!-- START HERO SECTION -->
+<div class="container-fluid">
+     <div id="hero">
+       <h1 id="heading">Learn Something New Today</h1>
+       <p id="Super">Special Offer, any course $15</p>
+       <form action="#" id="search" method="post" class="form">
+        <input  type="text" placeholder="What Do You Want To Learn? " id="search-course">
+    </form>
+     </div>
+ 
+    <div class="keys">
+      <div class="container">
+        <div class="row">
+                  <div class=" icon icon1">
+                      <p>20,000 online courses <br>
+                      Learn new skills</p>
+                  </div>
+                  <div class=" icon icon2">
+                      <p>Expert Instructors<br>
+                      Learn with different teach styles</p>
+                  </div>
+                  <div class=" icon icon3">
+                      <p>Lifetime access <br>
+                      learn at your own pace</p>
+                  </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="courses-list" class="container">
+        <h1 id="heading1" class="heading">Online Courses</h1>
+          <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./image/first.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>HTML5, CSS3, JavaScript for beginners</h4>
+                        <p>Juan Pedro</p>
+                        <img src="./image/stars.png">
+                        <p class="price">$200  <span class="float-right ">$15</span></p>
+                        <a href="#" class=" btn-primary btn btn-block add-to-cart " data-id="1">Add to Cart</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./image/second.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Cooking Course</h4>
+                            <p>Juan Pedro</p>
+                            <img src="./image/stars.png">
+                            <p class="price">$200  <span class="float-right ">$15</span></p>
+                            <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="2">Add to Cart</a>
+                        </div>
+                    </div>
+            </div>
+         <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./image/third.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Guitar for beginners</h4>
+                            <p>Juan Pedro</p>
+                            <img src="./image/stars.png">
+                            <p class="price">$200  <span class="float-right ">$15</span></p>
+                            <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="3">Add to Cart</a>
+                        </div>
+                    </div> 
+            </div>
+
+        </div> 
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./image/fourth.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Orchard at home</h4>
+                        <p>Juan Pedro</p>
+                        <img src="./image/stars.png">
+                        <p class="price">$200  <span class="float-right ">$15</span></p>
+                        <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="4">Add to Cart</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./image/fifth.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Home Decor with recycled products</h4>
+                            <p>Juan Pedro</p>
+                            <img src="./image/stars.png">
+                            <p class="price">$200  <span class="float-right ">$15</span></p>
+                            <a href="#" class="btn-primary btn btn-block add-to-cart " data-id="5">Add to Cart</a>
+                        </div>
+                    </div> 
+            </div>
+            <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./image/sixth.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Web Design for beginners</h4>
+                            <p>Juan Pedro</p>
+                            <img src="./image/stars.png">
+                            <p class="price">$200  <span class="float-right ">$15</span></p>
+                            <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="6">Add to Cart</a>
+                        </div>
+                    </div> 
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./image/first.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Learn to cook mexican food</h4>
+                        <p>Juan Pedro</p>
+                        <img src="./image/stars.png">
+                        <p class="price">$200  <span class="float-right ">$15</span></p>
+                        <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="7">Add to Cart</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./image/second.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Build a Music Studio</h4>
+                            <p>Juan Pedro</p>
+                            <img src="./image/stars.png">
+                            <p class="price">$200  <span class="float-right ">$15</span></p>
+                            <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="8">Add to Cart</a>
+                        </div>
+                    </div> 
+            </div>
+            <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./image/third.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Harvest your own fruits and vegetables</h4>
+                            <p>Juan Pedro</p>
+                            <img src="./image/stars.png">
+                            <p class="price">$200  <span class="float-right ">$15</span></p>
+                            <a href="#" class="btn-primary btn btn-block add-to-cart" data-id="9">Add to Cart</a>
+                        </div>
+                    </div> 
+            </div>
+        </div> 
+        <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./image/fourth.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Cook home cookies</h4>
+                            <p>Juan Pedro</p>
+                            <img src="./image/stars.png">
+                            <p class="price">$200  <span class="float-right ">$15</span></p>
+                            <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="10">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="./image/fifth.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>Modern JavaScript</h4>
+                                <p>Juan Pedro</p>
+                                <img src="./image/stars.png">
+                                <p class="price">$200  <span class="float-right ">$15</span></p>
+                                <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="11">Add to Cart</a>
+                            </div>
+                        </div> 
+                </div>
+                <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="./image/sixth.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>100 Natural recipes</h4>
+                                <p>Juan Pedro</p>
+                                <img src="./image/stars.png">
+                                <p class="price">$200  <span class="float-right ">$15</span></p>
+                                <a href="#" class="btn-primary btn btn-block add-to-cart mt-4" data-id="12">Add to Cart</a>
+                            </div>
+                        </div> 
+                </div>
+            </div>  
+    </div>
+  
+    <footer id="footer" class="footer">
+      <div class="container">
+          <div class="row">
+                  <div class="col-md-4">
+                          <nav id="primary" class="menu">
+                              <a class="link" href="#">For Business</a>
+                              <a class="link" href="#">Become an Instructor</a>
+                              <a class="link" href="#">Mobile Applications</a>
+                              <a class="link" href="#">Support</a>
+                              <a class="link" href="#">Help</a>
+                          </nav>
+                  </div>
+                  <div class="col-md-4">
+                          <nav id="secondary" class="menu">
+                              <a class="link" href="#">About Us</a>
+                              <a class="link" href="#">Work with us</a>
+                              <a class="link" href="#">Blog</a>
+                          </nav>
+                  </div>
+                  <div class="col-md-4">
+                    <div id="links">
+                    <a class="link" href="https://www.facebook.com/neeyal.jain?ref=bookmarks"> <i id="links" class="fa fa-facebook-square"></i></a>
+                    <a class="link" href="https://www.instagram.com/neeyaljain/"> <i id="links" class="fa fa-instagram"></i></a>
+                    <a class="link" href="#"> <i id="links" class="fa fa-linkedin-square"></i></a>
+                  </div>
+                  </div>
+          </div>
+      </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
